@@ -1,0 +1,25 @@
+
+# For more information on how to configure this file, please see:
+# https://docs.getdbt.com/docs/profile
+
+default:
+  outputs:
+    dev:
+      type: redshift
+      threads: 1
+      host: 127.0.0.1
+      port: 5439
+      user: alice
+      pass: pa55word
+      dbname: warehouse
+      schema: dbt_alice
+    prod:
+      type: redshift
+      threads: 1
+      host: 127.0.0.1
+      port: 5439
+      user: alice
+      pass: pa55word
+      dbname: warehouse
+      schema: analytics
+  target: dev

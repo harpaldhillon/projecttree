@@ -1,0 +1,13 @@
+default:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: harpaldhillon1c.mylabserver.com
+      user: postgres
+      pass: mysecretpassword
+      port: 5432
+      dbname: postgres
+      schema: postgres
+      threads: 1
+      keepalives_idle: 0
